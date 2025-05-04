@@ -47,7 +47,7 @@ export function Header() {
       >
         <div className="container flex items-center justify-between">
           <a href="#" className="font-serif text-xl md:text-2xl font-bold tracking-tight">
-            Portfolio
+            Yosua
           </a>
 
           
