@@ -5,19 +5,23 @@ import { Button } from "@/components/ui/button";
 
 import cert1 from "@/assets/certificate1.png";
 import cert2 from "@/assets/certificate2.png";
+import cert3 from "@/assets/certificate3.png";
 
 const certificates = [
   {
     title: "Docker Fundamental",
     description: "Certificate of completion for Docker Fundamental from Adinusa.",
     image: cert1,
-    link: "https://www.dicoding.com/certificates/XXXXXX"
   },
   {
     title: "Linux System Administration",
     description: "Certificate of completion for Linux System Administration from Adinusa.",
     image: cert2,
-    link: "https://coursera.org/verify/XXXXXX"
+  },
+  {
+    title: "IDN Programmer class",
+    description: "Cerrtificate of completion for IDN Programmer class from IDN.",
+    image: cert3,
   }
 ];
 
