@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: "Discord Bot Ai with Gemini",
-    description: "A productivity application allowing users to manage tasks, collaborate with team members, and track project progress in real-time.",
+    description: "Chat ai bot for Discord using Gemini API. The bot can answer questions, provide information, and engage in conversations with users. It is designed to be user-friendly and easy to interact with.",
     image: project2,
     tags: ["Node.js", "Discord.js", "Gemini"],
     githubUrl: "https://github.com/vero57/discord-bot",
@@ -39,7 +39,6 @@ const projects = [
 ];
 
 export function PortfolioSection() {
-  // Handler untuk tombol Live Demo
   const handleLiveDemo = useCallback((project) => {
     if (project.liveUrl === "#") {
       MySwal.fire({
