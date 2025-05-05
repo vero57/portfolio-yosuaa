@@ -37,7 +37,7 @@ export function ContactSection() {
   const socialLinks = [
     { icon: <Mail className="h-5 w-5" />, label: "yosuagerrad@gmail.com", href: "yosuagerrad@gmail.com" },
     { icon: <Phone className="h-5 w-5" />, label: "+6285175316050", href: "tel:+6285175316050" },
-    { icon: <Linkedin className="h-5 w-5" />, label: "LinkedIn", href: "https://linkedin.com" },
+    { icon: <Linkedin className="h-5 w-5" />, label: "yosuagerrard", href: "https://linkedin.com/in/yosuagerrard" },
     { icon: <Github className="h-5 w-5" />, label: "vero57", href: "https://github.com/vero57" },
     { icon: <Instagram className="h-5 w-5" />, label: "@yosuagerrard_", href: "https://www.instagram.com/yosuagerrard_/" },
   ];
