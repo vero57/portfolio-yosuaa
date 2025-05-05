@@ -32,7 +32,7 @@ export function CertificateSection() {
     <section id="certificates" className="py-20">
       <div className="section-container">
         <h2 className="section-title">My Certificates</h2>
-        <p className="section-subtitle">Beberapa sertifikat yang telah saya raih</p>
+        <p className="section-subtitle">Some of the certificates I have achieved</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
           {certificates.map((cert, idx) => (
             <Card key={idx} className="overflow-hidden card-hover">

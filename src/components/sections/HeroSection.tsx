@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import fotogw from "@/assets/fotocodinggw.jpg";
 
 export function HeroSection() {
   return (
@@ -32,8 +33,8 @@ export function HeroSection() {
         )}>
           <div className="absolute inset-0 rounded-2xl overflow-hidden bg-muted">
             <img 
-              src="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1812&auto=format&fit=crop"
-              alt="Developer workspace with laptop"
+              src={fotogw}
+              alt="foto coding gw"
               className="w-full h-full object-cover"
             />
           </div>
