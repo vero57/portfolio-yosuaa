@@ -4,7 +4,7 @@ Personal portfolio website built with a, featuring my projects and certificates.
 
 ## Demo
 
-**Live URL:** [https://portfolio-yosua-windows-theme.vercel.app/](https://portfolio-yosua-windows-theme.vercel.app/)
+**Live URL:** [https://portfolio-yosuaa.vercel.app/](https://portfolio-yosuaa.vercel.app/)
 
 ## Features
 
