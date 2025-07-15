@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import fotogw from "@/assets/fotocodinggw.jpg";
@@ -35,6 +34,7 @@ export function HeroSection() {
             <img 
               src={fotogw}
               alt="foto coding gw"
+              loading="lazy"
               className="w-full h-full object-cover"
             />
           </div>

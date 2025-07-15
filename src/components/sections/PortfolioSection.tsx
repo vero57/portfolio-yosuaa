@@ -88,6 +88,7 @@ export function PortfolioSection() {
                   <img 
                     src={project.image} 
                     alt={project.title} 
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" 
                   />
                 </div>
@@ -113,7 +114,6 @@ export function PortfolioSection() {
                       Code
                     </a>
                   </Button>
-                  {/* Live Demo Button */}
                   <Button
                     size="sm"
                     type="button"

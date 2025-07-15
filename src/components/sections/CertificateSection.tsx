@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 import cert1 from "@/assets/certificate1.png";
 import cert2 from "@/assets/certificate2.png";
 import cert3 from "@/assets/certificate3.png";
+import cert4 from "@/assets/certificate4.png";
 
 const certificates = [
   {
@@ -22,6 +26,11 @@ const certificates = [
     title: "IDN Programmer class",
     description: "Cerrtificate of completion for IDN Programmer class from IDN.",
     image: cert3,
+  },
+  {
+    title: "Responsive Web Design",
+    description: "Certificate of completion for Responsive Web Design from Freecodecamp.",
+    image: cert4,
   }
 ];
 
@@ -33,33 +42,58 @@ export function CertificateSection() {
       <div className="section-container">
         <h2 className="section-title">My Certificates</h2>
         <p className="section-subtitle">Some of the certificates I have achieved</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-          {certificates.map((cert, idx) => (
-            <Card key={idx} className="overflow-hidden card-hover">
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={cert.image}
-                  alt={cert.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle>{cert.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>{cert.description}</CardDescription>
-              </CardContent>
-              <CardFooter>
-                <Button
-                  size="sm"
-                  variant="outline"
-                  onClick={() => setOpenIdx(idx)}
-                >
-                  View Certificate
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
+        <div className="mt-8">
+          <Swiper
+            modules={[Pagination]}
+            pagination={{ clickable: true }}
+            spaceBetween={32}
+            slidesPerView={1}
+            breakpoints={{
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 }
+            }}
+            className="pb-12"
+          >
+            {certificates.map((cert, idx) => (
+              <SwiperSlide key={idx}>
+                <Card className="overflow-hidden card-hover h-full flex flex-col">
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={cert.image}
+                      alt={cert.title}
+                      loading="lazy"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <CardHeader>
+                    <CardTitle>{cert.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription>{cert.description}</CardDescription>
+                  </CardContent>
+                  <CardFooter>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => setOpenIdx(idx)}
+                    >
+                      View Certificate
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <style>{`
+            .swiper-pagination-bullet {
+              background: #fff !important;
+              opacity: 0.7;
+            }
+            .swiper-pagination-bullet-active {
+              background: #fff !important;
+              opacity: 1;
+            }
+          `}</style>
         </div>
         {openIdx !== null && (
           <div
@@ -80,6 +114,7 @@ export function CertificateSection() {
               <img
                 src={certificates[openIdx].image}
                 alt={certificates[openIdx].title}
+                loading="lazy"
                 className="w-full h-auto rounded"
               />
               <div className="mt-2 text-center font-semibold">{certificates[openIdx].title}</div>

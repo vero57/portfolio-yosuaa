@@ -1,15 +1,30 @@
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
+function Spinner() {
+  return (
+    <div className="flex items-center justify-center min-h-screen bg-black">
+      <span className="inline-block w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></span>
+    </div>
+  );
+}
 
 const NotFound = () => {
   const location = useLocation();
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     console.error(
       "404 Error: User attempted to access non-existent route:",
       location.pathname
     );
+    const timer = setTimeout(() => setIsLoading(false), 700);
+    return () => clearTimeout(timer);
   }, [location.pathname]);
+
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">

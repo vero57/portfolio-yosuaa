@@ -28,6 +28,7 @@ export function AboutSection() {
               <img 
                 src={aboutYosua}
                 alt="Professional portrait"
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>
