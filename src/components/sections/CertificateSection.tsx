@@ -10,6 +10,9 @@ import cert1 from "@/assets/certificate1.png";
 import cert2 from "@/assets/certificate2.png";
 import cert3 from "@/assets/certificate3.png";
 import cert4 from "@/assets/certificate4.png";
+import cert5 from "@/assets/certificate5.png";
+import cert6 from "@/assets/certificate6.png";
+import cert7 from "@/assets/certificate7.jpeg";
 
 const certificates = [
   {
@@ -31,7 +34,22 @@ const certificates = [
     title: "Responsive Web Design",
     description: "Certificate of completion for Responsive Web Design from Freecodecamp.",
     image: cert4,
-  }
+  },
+  {
+    title: "Solu Edu games project",
+    description: "Participated in the Educational Games Development Project as a Game Developer.",
+    image: cert5,
+  },
+  {
+    title: "Data Analytics digitalent 2024",
+    description: "Data Analytics course fot student Thematic Academy",
+    image: cert6,
+  },
+  {
+    title: "Automation with Ansible",
+    description: "Certificate of completion for Automation with Ansible from Adinusa",
+    image: cert7,
+  },
 ];
 
 export function CertificateSection() {

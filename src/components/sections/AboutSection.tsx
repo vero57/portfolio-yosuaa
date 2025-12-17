@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import aboutYosua from "@/assets/about-yosua.png";
+import aboutYosua from "@/assets/about-yosua.jpeg";
 
 const skills = [
   "JavaScript (ES6+)", 
