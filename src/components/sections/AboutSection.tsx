@@ -69,7 +69,7 @@ export function AboutSection() {
             
             <div className="mt-10">
               <a 
-                href="/cv/yosuacv.pdf"
+                href="/cv/CV_YosuaGerrardFerdinand_FullStackDeveloper.pdf"
                 download
                 className="inline-flex items-center px-6 py-3 border border-primary/20 rounded-lg hover:bg-primary/10 transition-colors"
               >
