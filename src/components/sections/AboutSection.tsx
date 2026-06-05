@@ -13,6 +13,8 @@ const skills = [
   "PHP",
   "Dart",
   "Flutter",
+  "Git",
+  "Github",
 ];
 
 export function AboutSection() {

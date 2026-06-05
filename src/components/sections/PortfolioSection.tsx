@@ -3,7 +3,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Github, Link as LinkIcon } from "lucide-react";
 import project1 from "@/assets/project1.png";
 import project2 from "@/assets/project2.png";
-import project3 from "@/assets/project3.png";
+// import project3 from "@/assets/project3.png";
+import project4 from "@/assets/project4.png";
 import { CertificateSection } from "./CertificateSection";
 import { useCallback } from "react";
 import Swal from "sweetalert2";
@@ -13,28 +14,36 @@ const MySwal = withReactContent(Swal);
 
 const projects = [
   {
-    title: "Personal Portfolio Website with Windows 11 Theme",
-    description: "A personal portfolio I built, themed like the Windows 11 desktop, using React and Tailwind CSS.",
+    title: "Online Pharmacy",
+    description: "An online pharmacy website built with Laravel and Tailwind CSS. The website allows users to browse and purchase pharmaceutical products online, providing a convenient and user-friendly shopping experience.",
     image: project1,
-    tags: ["React", "Node.js", "Tailwind CSS"],
-    githubUrl: "https://github.com/vero57/portfolio-windows-theme",
-    liveUrl: "https://portfolio-yosua-windows-theme.vercel.app/"
-  },
-  {
-    title: "Discord Bot Ai with Gemini",
-    description: "Chat ai bot for Discord using Gemini API. The bot can answer questions, provide information, and engage in conversations with users. It is designed to be user-friendly and easy to interact with.",
-    image: project2,
-    tags: ["Node.js", "Discord.js", "Gemini"],
-    githubUrl: "https://github.com/vero57/discord-bot",
+    tags: ["Laravel", "MySql", "Tailwind CSS"],
+    githubUrl: "https://github.com/vero57/lsp-apotek-yosua.git",
     liveUrl: "#"
   },
   {
-    title: "Educational Game Using Flutter",
-    description: "Built with Flutter and Dart, the game essentially works like this: You'll see different types of fish, say, three kinds like red, yellow, and white, each with a varying number (e.g., 3 red, 1 yellow, 10 white). You get a time limit to remember these numbers. After time is up, a random question is posed, like 'How many red fish were shown?' That's the core gameplay.",
-    image: project3,
+    title: "Emo Shuffle Card Game",
+    description: "A fun and interactive card game built with Flutter and Tailwind CSS. Players can shuffle and match emojis to score points.",
+    image: project2,
+    tags: ["Flutter", "Dart", "Tailwind CSS"],
+    githubUrl: "https://github.com/berbinarin/berbinarin-emoshuffle.git",
+    liveUrl: "#"
+  },
+  // {
+  //   title: "Educational Game Using Flutter",
+  //   description: "Built with Flutter and Dart, the game essentially works like this: You'll see different types of fish, say, three kinds like red, yellow, and white, each with a varying number (e.g., 3 red, 1 yellow, 10 white). You get a time limit to remember these numbers. After time is up, a random question is posed, like 'How many red fish were shown?' That's the core gameplay.",
+  //   image: project3,
+  //   tags: ["Dart", "Flutter"],
+  //   githubUrl: "https://github.com/vero57/fish-flash",
+  //   liveUrl: "https://demo-fish-flash.vercel.app/"
+  // },
+  {
+    title: "Order Food App",
+    description: "A mobile app for ordering food from local restaurants, built with Flutter and Dart. Users can browse menus, add items to their cart, and place orders.",
+    image: project4,
     tags: ["Dart", "Flutter"],
-    githubUrl: "https://github.com/vero57/fish-flash",
-    liveUrl: "https://demo-fish-flash.vercel.app/"
+    githubUrl: "https://github.com/vero57/order-food-app",
+    liveUrl: "#"
   }
 ];
 

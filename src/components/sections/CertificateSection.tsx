@@ -13,6 +13,7 @@ import cert4 from "@/assets/certificate4.png";
 import cert5 from "@/assets/certificate5.png";
 import cert6 from "@/assets/certificate6.png";
 import cert7 from "@/assets/certificate7.jpeg";
+import cert8 from "@/assets/certificate8.png";
 
 const certificates = [
   {
@@ -50,6 +51,11 @@ const certificates = [
     description: "Certificate of completion for Automation with Ansible from Adinusa",
     image: cert7,
   },
+  {
+    title: "Intern as Front End Developer at PT. Berbinar Insightful Indonesia",
+    description: "Certificate of completion for Internship as Front End Developer at PT. Berbinar Insightful Indonesia",
+    image: cert8,
+  }
 ];
 
 export function CertificateSection() {
